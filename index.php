@@ -1,5 +1,19 @@
 <?php
-require_once('/path/to/OneSignal/vendor/autoload.php');
+require_once('./vendor/autoload.php');
+
+use onesignal\client\api\DefaultApi;
+use onesignal\client\Configuration;
+use onesignal\client\model\GetNotificationRequestBody;
+use onesignal\client\model\Notification;
+use onesignal\client\model\StringMap;
+use onesignal\client\model\Player;
+use onesignal\client\model\UpdatePlayerTagsRequestBody;
+use onesignal\client\model\ExportPlayersRequestBody;
+use onesignal\client\model\Segment;
+use onesignal\client\model\FilterExpressions;
+use PHPUnit\Framework\TestCase;
+use GuzzleHttp;
+
 // YjIyMmM2MDktNjE4MC00ZTIwLTg4YTAtZmE5MGUzMmRjMDQ4
 
 const APP_ID = '4f9eb60c-7906-40dd-8c7f-77fc07b39d6d';
